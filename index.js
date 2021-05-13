@@ -21,7 +21,7 @@ function purchaseDate(id) {
 // Challenge 3:
 function whenPayment(id) {
   const lastPayment = new D(data[id].lastpayment).when();
-  console.log(`Last payment was made ${lastPayment[0].toLowerCase()}`);
+  console.log(`Last payment was made ${lastPayment[2].toLowerCase()}`);
 }
 
 // Challenge 4
