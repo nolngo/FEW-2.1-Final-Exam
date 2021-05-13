@@ -13,24 +13,24 @@ function fullName(id: number): string {
 }
 
 // Challenge 2:
-function purchaseDate(id) {
+function purchaseDate(id: number): string {
   const pDate = new D(data[id].purchased).format('M D, Y');
   console.log(`Purchased: ${pDate}`);
 }
 
 // Challenge 3:
-function whenPayment(id) {
+function whenPayment(id: number): string {
   const lastPayment = new D(data[id].lastpayment).when();
   console.log(`Last payment was made ${lastPayment[0].toLowerCase()}`);
 }
 
 // Challenge 4
-function phoneNumber(id) {
-  const pNum = data[0].phone;
+function phoneNumber(id: number): string {
+  const pNum = data[id].phone;
   console.log(pNum);
 }
 
-function printDataById(jsonID) {
+function printDataById(jsonID: number) {
   const id = jsonID - 1; // Our first ID starts with 1 in our json, but corresponds to index 0.
   fullName(id);
   purchaseDate(id);
