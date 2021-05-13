@@ -27,7 +27,6 @@ function whenPayment(id) {
 // Challenge 4
 function phoneNumber(id) {
   const pNum = data[0].phone;
-  const change = ('' )
   console.log(pNum);
 }
 
